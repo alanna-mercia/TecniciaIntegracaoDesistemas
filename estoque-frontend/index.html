@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard de Estoque e Aprovação de Pedidos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Login Form -->
+  <div id="login-container">
+    <h2>Login</h2>
+    <form id="login-form">
+      <input type="text" id="username" placeholder="Usuário" required><br><br>
+      <input type="password" id="password" placeholder="Senha" required><br><br>
+      <button type="submit">Entrar</button>
+    </form>
+  </div>
+
+  <!-- Dashboard -->
+  <div id="dashboard-container" style="display:none;">
+    <h1>Dashboard de Estoque</h1>
+    
+    <!-- Estoque -->
+    <div id="stock-dashboard">
+      <h2>Estoque Atual</h2>
+      <table id="stockTable">
+        <thead>
+          <tr>
+            <th>Produto</th>
+            <th>Quantidade</th>
+            <th>Preço</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Dados do estoque serão carregados via JS -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Aprovação/Rejeição de Pedidos -->
+    <div id="order-approval">
+      <h2>Aprovação/Rejeição de Pedidos</h2>
+      <table id="orderTable">
+        <thead>
+          <tr>
+            <th>ID Pedido</th>
+            <th>Cliente</th>
+            <th>Produto</th>
+            <th>Status</th>
+            <th>Ação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Dados dos pedidos serão carregados via JS -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
